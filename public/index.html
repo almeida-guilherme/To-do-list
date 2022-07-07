@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>To do List</title>
+</head>
+<body>
+    <div class="container">
+        <section id="section1">
+            <h1 >TO DO LIST</h1>
+            <div>
+                <div class="input-box">
+                    <label for="Titulo">Atividade</label>
+                    <input  type="text" name="Titulo" id="title" placeholder="Digite o titulo da atividade">
+                </div>
+                <div class="input-box">
+                    <label for="Descricao">Descrição</label>
+                    <textarea style="resize: none" name="Descricao" id="desc" placeholder="Digite a descrição" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <button onclick="newPost()" id="savebutton"><a href="#">Salvar</a></button>
+        </section>
+
+        <section id="section2">
+            <h2 >LISTA</h2>
+            <div id="posts">
+            </div>
+        </section>
+
+        
+        <section id="section3">
+            <img src="./checklist-animate.svg" width="450px" alt="">
+        </section>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
